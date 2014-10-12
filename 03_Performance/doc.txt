@@ -1,0 +1,2 @@
+http://jsperf.com/json-search-by-key-name/4
+https://www.google.es/search?q=amischol+site%3Ajsperf.com&oq=amischol+site%3Ajsperf.com&aqs=chrome..69i57.10563j0j7&sourceid=chrome&es_sm=93&ie=UTF-8#q=corral+site:jsperf.com&start=10

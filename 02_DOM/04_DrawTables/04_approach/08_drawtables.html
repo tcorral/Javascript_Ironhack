@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script type="text/template" id="table_template">
+    <table>
+        <tbody>
+            <tr>
+            <% for(var index = 0; index < headers; index++) {%>
+                <th>Header <%=index%></th>
+            <% } %>
+            </tr>
+            <% for(var indexRows = 0; indexRows < rows; indexRows++) {%>
+                <tr>
+                <% for(var indexCols = 0; indexCols < cols; indexCols++) {%>
+                    <td>Cell [<%=indexRows%>,<%=indexCols%>]</td>
+                <% } %>
+                </tr>
+            <% } %>
+        </tbody>
+    </table>
+</script>
+<script type="text/javascript" src="../../lib/underscore.js"></script>
+<script type="text/javascript" src="08_DrawTables.js"></script>
+</body>
+</html>

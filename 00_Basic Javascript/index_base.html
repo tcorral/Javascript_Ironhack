@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <div>Ironhack</div>
+    <script src="writeMessage.js"></script>
+    <div>
+        Other message
+    </div>
+    <ul id="list">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul>
+    <script>
+        var list = document.getElementById('list');
+        var items = list.getElementsByTagName('li');
+
+
+
+        console.log(items, items.length);
+    </script>
+    <!--<script>-->
+        <!--window.onload = function () {-->
+            <!--document.body.innerHTML = '<div>Hola</div>';-->
+        <!--};-->
+        <!--console.log('Message');-->
+    <!--</script>-->
+</body>
+</html>
