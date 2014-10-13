@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .match {
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+Herramienta de busqueda en el primer paragrafo del Quijote.
+<p id="textContent">En un lugar de la mancha de cuyo nombre no quiero acordarme no ha mucho tiempo que vivia un hidalgo
+    de los de lanza en astillero, rocín flaco y galgo corredor</p>
+
+<div id="resultSearch">
+
+</div>
+<form id="formulaire">
+    <input type="text" id="search" placeholder="Search..."/>
+    <!--<input type="submit" value="Search"/>-->
+</form>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        //$('#formulaire').on('submit', function (event) {
+        $('#search').on('keyup', function (event) {
+//            event.preventDefault();
+//            var search = $("#search").val();
+            var search = this.value;
+            var content = $("#textContent").html();
+            var reSearch = new RegExp(search, 'g');
+            console.log(reSearch);
+            var result = content.replace(reSearch, function (match) {
+                return '<span class="match">' + match + '</span>';
+            });
+            var element = document.getElementById('resultSearch');
+            element.innerHTML = result;
+        });
+    });
+</script>
+</body>
+</html>

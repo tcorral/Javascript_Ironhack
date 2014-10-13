@@ -1,0 +1,1 @@
+var Lassie = extend(Dog, {});
