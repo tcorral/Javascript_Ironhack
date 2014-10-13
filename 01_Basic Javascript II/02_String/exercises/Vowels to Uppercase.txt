@@ -1,0 +1,8 @@
+You will receive as parameter an string.
+You should check for all the vowels in the string and transform them to uppercase.
+
+"En una humilde morada no ha mucho tiempo que vivia un hidalgo de los de lanza..."
+
+
+var str = 'En un lugar de la mancha de cuyo nombre no quiero acordarme, no ha mucho tiempo..';
+str.replace(/[aeiou]/g, function (match) { return match.toUpperCase(); });

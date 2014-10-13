@@ -1,0 +1,2 @@
+You will receive as parameter an string.
+You should reverse the order of the string, so if you receive 'Tennis' it should be transformed to 'sinneT'

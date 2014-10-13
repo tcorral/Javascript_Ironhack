@@ -44,7 +44,6 @@
         oContainer.innerHTML = tmpl('table_tmpl', {nRows: 1000, nColumns: 1000});
 
         nEnd = window.performance.now() - nStart;
-        debugger;
         console.log( nEnd );
     }
 
