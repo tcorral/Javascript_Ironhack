@@ -1,4 +1,4 @@
-var showMessage = function () {
+var showMessage = function() {
   console.log('Message');
 };
 
@@ -11,6 +11,7 @@ function showHelloMessage() {
 // showHelloMessage();
 
 function showMessageByArgument(message) {
+  delete message;
   console.log(message);
 }
 
