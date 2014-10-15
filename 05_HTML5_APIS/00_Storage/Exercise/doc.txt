@@ -1,0 +1,22 @@
+Create a TODO-List:
+    - Create an index.html file
+        - Include jQuery from CDN jQuery.
+        - Create a form
+            - Create an input text to insert the description of the task.
+            - Create an input submit button to send the form.
+        - Create a list that will contains the TODO-List items.
+    - Create a todolist.js file
+        - Create a document ready event.
+            - Set an event handler on click in list (HTML) that will use delegation to listen
+              clicks in items. (Toggle effect)
+                - When click in items should modify it's done value to its contrary value and strikethrough
+                  the task description if is done and remove it if not.
+            - Set an event handler on submit form that should avoid the reload of the page.
+                - Get the value from input and create an object with two properties:
+                    - name -> string
+                    - done -> boolean (false by default)
+                - Store the object in one array of tasks.
+                - Set the array in localStorage using JSON.stringify.
+                - Add the new item in list (HTML).
+            - When the page is loaded it should try to retrieve data from localStorage using JSON.parse
+              and then create the list with all the tasks de-serializing the original objects.

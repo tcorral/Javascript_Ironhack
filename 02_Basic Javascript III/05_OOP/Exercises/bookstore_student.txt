@@ -1,0 +1,52 @@
+Libros:
+    Categorias:
+        Arte, cine y fotografía
+        Biografías, diarios y hechos reales
+        Ciencias, tecnología y medicina
+        Consulta
+        Deporte
+        Derecho
+        Economía y empresa
+        Historia
+        Hogar, manualidades y estilos de vida
+        Infantil y juvenil
+        Informática, internet y medios digitales
+        Lengua, lingüística y redacción
+        Literatura y ficción
+        Política
+        Religión
+        Salud, familia y desarrollo personal
+        Sociedad y ciencias sociales
+        Viajes
+    Subcategorias:
+        Programación
+        Redes Sociales...
+    Libro:
+        -> id: ''
+        -> precio: 0
+        -> tipo: digital / printed -> audiolibro / ebook
+        -> tapa: blanda / dura
+        -> autor: ''
+        -> título: ''
+        -> idioma: ''
+        -> stock: 0
+        -> páginas: 0
+        -> valoracion: 0
+        -> comentarios: []
+        -> editorial: '',
+        -> fecha_edición: Date
+Autor:
+    -> id: ''
+    -> nombre: ''
+    -> apellidos: '',
+    -> libros: []
+Carro:
+    -> elementos
+    -> getPrice
+
+Usuario:
+    -> nombre: ''
+    -> apellidos: '',
+    -> edad: ,
+    -> email: ''
+    -> compras: []

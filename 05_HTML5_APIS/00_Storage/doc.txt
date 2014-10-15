@@ -1,0 +1,5 @@
+http://www.html5rocks.com/en/tutorials/offline/storage/
+
+http://www.html5rocks.com/en/features/storage
+
+https://developer.mozilla.org/es/docs/IndexedDB-840092-dup/Usando_IndexedDB
